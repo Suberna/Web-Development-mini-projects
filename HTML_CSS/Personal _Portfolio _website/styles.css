@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 2;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f4f4f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+header{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       background-color: #333;
+       color: white;
+       padding: 15px;
+}
+
+.logo h1{
+    font-weight: 300;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* .hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+} */
+
+@media(max-width:768px){
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    nav.active ul{
+        display: flex;
+    }
+
+}
+
+#Home{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #87cefa;
+}
+
+.welcome_text h2{
+    font-size: 3rem;
+    animation: slideIn 2s ease-out
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#About{
+    padding: 60px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_container img{
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.about_container p{
+    width: 50%;
+}
+
+#projects{
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+}
+
+.projects_container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects{
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.projects:hover{
+    transform: scale(1.05);
+}
+
+.projects img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects h3{
+    margin-top: 10px;
+    color: #333;
+}
+
+#Contact{
+    padding: auto;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#Contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Contact input,#Contact textarea{
+    width: 300px;
+    padding: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}

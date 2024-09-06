@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <div class ="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav id ="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+   </header>
+   <!--Home Section-->
+   <section id="Home">
+     <div class="welcome_text">
+        <h2>Hello, this the creater</h2>
+        <p>AI Engineer and Web developer</p>
+     </div>
+   </section>
+
+   <!--About Section-->
+   <section id="About">
+    <h2>About me</h2>
+    <div class ="about_container">
+      <img src="Image.jpg" alt="Image" class="profile_pic">
+      <p>
+        I am creater , a passionate AI engineer and web developer with background in Data Science.
+
+      </p>
+    </div>
+   </section>
+
+   <!--Project Section-->
+   <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects_container">
+        <div class="projects">
+            <img src="image1.jpg" alt="project1">
+            <h3>AI Disaster Prediction</h3>
+            <p>Build Disaster prediction system using AI.</p>
+        </div>
+        <div class="projects">
+            <img src="image2.png" alt="project2">
+            <p>A responsive personal portfolio website.</p>
+        </div>
+    </div>
+   </section>
+
+   <!--Contact Section-->
+   <section id="Contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea rows="3" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>    
+    </form>
+    <div class="social_links">
+        <a href="#">LinkdIn</a>
+        <a href="#">Github</a>
+        <a href="#">Insta</a>
+    </div>
+   </section>
+   <footer>
+    <p>&copy; 2024 creater , all rights reserved</p>
+   </footer>
+    
+   <!-- <script>
+    function toogleMenu(){
+        const navbar=document.getElementById("navbar");
+        navbar.classList.toogle("active");
+    }
+   </script> -->
+</body>
+</html>
